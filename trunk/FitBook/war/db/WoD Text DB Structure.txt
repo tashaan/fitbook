@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------
+
+<ascii-01>
+<ascii-02><name><ascii-03>
+<ascii-02><type><ascii-03>
+<ascii-02><specific><ascii-03>
+<ascii-02><exercise><ascii-03>
+<ascii-02><exercise><ascii-03>
+...
+<ascii-02><exercise><ascii-03>
+<ascii-04>
+
+
+<specific> = <time-min> | <rounds>
+<rounds> = x[(-x)*]
+
+--------------------------------------------------------------------------------
+
+Parser only validates that Type field is valid, all other fields are only guaranteed to be a string of at least length 1. Check them before insertion!
