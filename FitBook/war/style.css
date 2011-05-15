@@ -1,0 +1,256 @@
+/* CSS layout for FitBook Website
+ * Authors: Kevin Lau-Fang, Eric Chung.
+ *
+ */
+body { /*background: #333333;*/
+	/*background: url(mainbg.jpg); ;*/
+	background: url(/images/bg3.jpg) repeat fixed;
+	margin: 0;
+	padding: 0;
+}
+
+#masthead { /*width: 700px;*/
+	width: 100%;
+	background: url(/images/header_bg.jpg) no-repeat top center;
+	height: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#filler {
+	width: 700px;
+	height: 20px;
+}
+
+#user_container {
+	width: 700px;
+	height: 50px; margin-left : auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#user_info {
+	background: #172322;
+	text-align: left;
+	font-family: Arial, Helvetica, Tahoma, sans-serif;
+	color: #FFF;
+	line-height: 1.7em;
+	list-style: none;
+	margin: 0;
+	padding: 5px 5px;
+	width: 190px;
+	height: 50px;
+	float: right; margin-left : auto;
+	margin-right: 0px;
+	border: 1px solid #777;
+	filter: alpha(opacity =   90);
+	opacity: 0.7;
+	margin-left: auto;
+}
+
+#user_info li {
+	background: #172322;
+	height: 50px;
+	float: right;
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#user_info a {
+	color: #ccc;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#user_info a:hover {
+	color: #fff;
+}
+
+#top_menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 700px;
+	height: 30px;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#top_menu li {
+	float: right;
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#top_menu a {
+	/* background: #333 url("seperator.gif") bottom right no-repeat;*/
+	background: #172322;
+	color: #ccc;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#top_menu a:hover { /* background: #99b910; */
+	color: #fff;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #99b910;
+}
+
+table {
+	border-collapse: collapse;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: #ccc;
+}
+
+.col1 {
+	width: 100%;
+	padding: 15px 20px;
+	font-size: small;
+	float: center;
+	color: #eee;
+}
+
+.col1 a {
+	color: #FFF;
+	background-color: transparent
+}
+
+.col1 h1 {
+	background: url(/images/green-bullet.jpg) no-repeat left center;
+	width: 100%;
+	font-variant: small-caps;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-size: x-large;
+	color: #FFF;
+	margin-top: 0;
+	margin-bottom: 0;
+	/*border-top: 1px solid #FFF;*/
+	/*filter: alpha(opacity = 90);
+	opacity: .9;*/
+}
+
+#page_content { /*background: #6c6c6c;*/
+	width: 700px;
+	vertical-align: top;
+	min-height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	font: "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	background-color: #000;
+	border: 1px solid black;
+	filter: alpha(opacity =   90);
+	opacity: 0.6;
+}
+
+#footer {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	font-weight: normal;
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	background-color: #000;
+	border: 1px solid black;
+	filter: alpha(opacity =   90);
+	opacity: 0.6;
+	color: #fff;
+	clear: both;
+	/*border: 1px solid #777;*/
+}
+
+#footer p {
+	margin: 0px 20px;
+	text-align: center;
+	font-family: Arial, Helvetica, Tahoma, sans-serif;
+	line-height: 1.7em;
+}
+
+.innerBox {
+	padding: 8px 12px;
+	margin: 0px;
+}
+
+.roundcont { /* width: 400px; */
+	width: 620px;
+	background-color: #172322;
+	border-radius: 10px;
+	padding: 0px 20px;
+	/*filter: alpha(opacity = 90);
+	opacity: 0.6;*/
+}
+
+.roundcont a {
+	color: #99b910;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.roundcont a:hover {
+	color: #fff;
+}
+
+.roundcont p {
+	margin: 0 10px;
+	/*font: 95% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;*/
+	font-family: Arial, Helvetica, Tahoma, sans-serif;
+	line-height: 1.7em;
+}
+
+.roundtop {
+	background: url(/images/topr.gif) no-repeat top right;
+}
+
+.roundbottom {
+	background: url(/images/bottomr.gif) no-repeat top right;
+}
+
+img.corner {
+	width: 15px;
+	height: 15px;
+	border: none;
+	display: block !important;
+}
+
+blockquote {
+	font-family: Arial, Helvetica, Tahoma, sans-serif;
+	line-height: 1.7em;
+	width: 620px;
+	margin: 0px;
+	padding: 10px;
+	quotes: "\201C" "\201D";
+}
+
+blockquote:before {
+	content: open-quote;
+	font-weight: bold;
+}
+
+blockquote:after {
+	content: close-quote;
+	font-weight: bold;
+}
