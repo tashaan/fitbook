@@ -19,32 +19,67 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!--
+    	Line Chart
+     -->
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Year');
+        data.addColumn('string', 'Month');
         data.addColumn('number', 'Actual Weight');
         data.addColumn('number', 'Ideal Weight');
         data.addRows(4);
-        data.setValue(0, 0, '2004');
+        data.setValue(0, 0, 'Jan');
         data.setValue(0, 1, 1000);
-        data.setValue(0, 2, 400);
-        data.setValue(1, 0, '2005');
+        data.setValue(0, 2, 150);
+        data.setValue(1, 0, 'Feb');
         data.setValue(1, 1, 1170);
-        data.setValue(1, 2, 460);
-        data.setValue(2, 0, '2006');
+        data.setValue(1, 2, 150);
+        data.setValue(2, 0, 'Mar');
         data.setValue(2, 1, 860);
-        data.setValue(2, 2, 580);
-        data.setValue(3, 0, '2007');
+        data.setValue(2, 2, 150);
+        data.setValue(3, 0, 'Apr');
         data.setValue(3, 1, 1030);
-        data.setValue(3, 2, 540);
+        data.setValue(3, 2, 150);
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-        chart.draw(data, {width: 400, height: 240, title: 'How Fat Are You?'});
+        var chart = new google.visualization.LineChart(document.getElementById('weight_chart'));
+        chart.draw(data, {width: 620, height: 300, title: '2011: How Fat Are You? (lbs)'});
       }
     </script>
+    <!--
+    	Bar Chart
+     -->
+      <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Month');
+        data.addColumn('number', 'Expected');
+        data.addColumn('number', 'Actual');
+        data.addRows(4);
+        data.setValue(0, 0, 'Jan');
+        data.setValue(0, 1, 15);
+        data.setValue(0, 2, 3);
+        data.setValue(1, 0, 'Feb');
+        data.setValue(1, 1, 12);
+        data.setValue(1, 2, 4);
+        data.setValue(2, 0, 'Mar');
+        data.setValue(2, 1, 20);
+        data.setValue(2, 2, 5);
+        data.setValue(3, 0, 'Apr');
+        data.setValue(3, 1, 15);
+        data.setValue(3, 2, 2);
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('wod_chart'));
+        chart.draw(data, {width: 620, height: 300, title: 'How many times have you worked out?',
+                          hAxis: {title: 'Month', titleTextStyle: {color: 'red'}}
+                         });
+      }
+    </script>
+
 </head>
 
 <body>
@@ -107,9 +142,11 @@
 				<h1>&nbsp;&nbsp;&nbsp;&nbsp;My FitBook Statistics</h1>
 
 				<br/>
-				<div id="chart_div"></div>
+				<div id="weight_chart"></div>
+				<br/>
+				<div id="wod_chart"></div>
 
-				<h3>Analysis: Get up do some more Crossfit!<br /></h3>
+				<h3>Analysis: You need more Crossfit!<br /></h3>
 
 
 				<div class="roundbottom">
